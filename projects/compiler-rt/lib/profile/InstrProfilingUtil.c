@@ -22,6 +22,7 @@
 #include <errno.h>
 #endif
 
+#undef COMPILER_RT_HAS_UNAME
 #ifdef COMPILER_RT_HAS_UNAME
 #include <sys/utsname.h>
 #endif

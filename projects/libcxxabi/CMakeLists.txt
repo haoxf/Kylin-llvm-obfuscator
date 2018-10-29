@@ -80,7 +80,7 @@ set(LIBCXXABI_LIBCXX_LIBRARY_PATH "" CACHE PATH "The path to libc++ library.")
 # system's libc++, which might not have been built against our libc++abi. In the
 # case of an in tree build, libc++ will prefer a dynamic libc++abi from the
 # system over a static libc++abi from the output directory.
-option(LIBCXXABI_ENABLE_SHARED "Build libc++abi as a shared library." ON)
+option(LIBCXXABI_ENABLE_SHARED "Build libc++abi as a shared library." OFF)
 option(LIBCXXABI_ENABLE_STATIC "Build libc++abi as a static library." ON)
 
 option(LIBCXXABI_BAREMETAL "Build libc++abi for baremetal targets." OFF)
